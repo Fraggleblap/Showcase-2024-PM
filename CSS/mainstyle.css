@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    justify-content: space-around;
+    text-decoration: none;
+    color: #FFFCF4;
 }
 header nav ul{
     display: flex;
@@ -19,8 +26,9 @@ header nav ul{
 .carousel-container {
     padding-top: 2%;
     padding-bottom: 2%;
-    width:350%;
-    position: relative;
+    width:100%;
+    white-space: nowrap;
+    overflow: auto;
 }
 
 .slides::-webkit-scrollbar {
@@ -32,8 +40,8 @@ header nav ul{
     display: flex;
     overflow-y: hidden; /* Hide the scroll bar beneath slides on non-touch devices */
     overflow-x: scroll;
-    scroll-snap-type: x;
-    scroll-behavior:smooth;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .slides::-webkit-scrollbar-thumb {
@@ -55,7 +63,7 @@ header nav ul{
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
