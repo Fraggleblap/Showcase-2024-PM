@@ -12,23 +12,24 @@ body {
 a {
     justify-content: space-around;
     text-decoration: none;
-    color: #FFFCF4;
+    color: #000000;
 }
 
 header nav ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: normal;
     justify-content: space-around;
     list-style: none;
     margin: 0;
-    padding: 0;
     background: #286454;
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 3em;
 
+}
+li {
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .carousel-container {
@@ -84,8 +85,8 @@ header nav ul {
     padding: 2px;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: 90%;
     background: #000;
     border-color: #000;
     border-style: none;
@@ -95,11 +96,11 @@ header nav ul {
     display: flex;
     flex-flow: column nowrap;
     font-size: 24px;
-    width: 25%;
-    height: 50%;
     padding-right: 5%;
     padding-left: 5%;
     flex-shrink: 1;
+    width: 20%;
+    height: 20%;
 }
 
 .product>a>h2 {
@@ -107,6 +108,7 @@ header nav ul {
     align-self: flex-start;
     margin-left: 5%;
     flex-shrink: 1;
+    font-size: 1.5vw;
 }
 
 .banner>img {
