@@ -67,13 +67,102 @@ li>a {
     padding-bottom: 1.5%;
 }
 
+
+
+#InStore {
+    background-image: url(/images/WebImages/giftshop1.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#For_Kids {
+    background-image: url(/images/WebImages/kidspattern_bg.jpg);
+    background-blend-mode: lighten;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#Best_Sellers {
+    background-image: url(/images/WebImages/giftshop2.jpg);
+    background-blend-mode: lighten;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#Books {
+    background-image: url(/images/WebImages/books_bg.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#Misc {
+    background-image: url(/images/WebImages/jungle_bg.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+#Online {
+    background-image: url(/images/WebImages/mines_bg.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    border-color: #fcba03;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+
 .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: #A01C24;
     border-radius: 10px;
 }
 
 .slides::-webkit-scrollbar-track {
     background: transparent;
+}
+
+button {
+    background-color: #A01C24; 
+    color: white;
+    padding: 3px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5%;
+    border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
+button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+button:hover {
+    cursor:pointer;
 }
 
 .product>div {
@@ -112,6 +201,11 @@ li>a {
     width: 20%;
     height: 20%;
     transition: scale 0.2s;
+}
+
+.product>a {
+    text-decoration: none;
+    color: #f5eded;
 }
 
 .product:hover {
