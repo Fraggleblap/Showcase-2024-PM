@@ -29,7 +29,8 @@ align-items: center;
 .productdescription {
 padding-left: 1%;
 }
-button {
+button,
+.abutton {
     background-color: #A01C24; 
     color: white;
     padding: 35px 115px;
@@ -41,11 +42,13 @@ button {
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-button:active {
+button:active
+.abutton:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-button:hover {
+button:hover,
+.abutton:hover {
     cursor:pointer;
 }
 p {
