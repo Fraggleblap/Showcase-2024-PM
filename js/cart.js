@@ -1,6 +1,6 @@
 const
     // set the name of your shop here
-    shopID = 'JacksBaconShopdoteatchteeemmell',
+    shopID = 'JPMerch4',
     // match the following attributes to the classes on your products
     productClass = 'product',
     imageClass = 'prodImage',
@@ -101,7 +101,7 @@ function updateCart() {
     let total = 0;
     // check if cart is empty
     if (shop.cart.length === 0) {
-        cart.innerHTML = '<h2>Your cart is empty</h2>';
+        cart.innerHTML = '<h3>Your cart is empty</h3>';
         return;
     }
     // loop through cart and add items to cart element
@@ -116,7 +116,7 @@ function updateCart() {
                 <div class="cartItemPricing">
                     <p>Price: ${item.price.toFixed(2)}</p>
                     <p>Quantity: ${item.qty}</p>
-                    <p>Subtotal: $${(item.price * item.qty).toFixed(2)}</p>
+                    <p>Subtotal: ${(item.price * item.qty).toFixed(2)}</p>
                     <a id="${index}" href="#" class="removeBtn">Remove</a>
                 </div>
             </div>
