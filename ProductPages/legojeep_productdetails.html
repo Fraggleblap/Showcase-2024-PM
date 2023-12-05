@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
+    <link rel="stylesheet" href="/CSS/cartpage.css">
     <link rel="stylesheet" href="/CSS/mainstyle.css">
     <link rel="stylesheet" href="/CSS/productstyle.css">
+    <script src="js/cart.js"></script>
 </head>
 
 <body>
@@ -15,26 +17,26 @@
             <ul>
                 <li><a href="/merchHP.html">Home</a></li>
                 <li><a href="/merchandise.html">Merch<a></li>
-                <li><a href="/cart.html">Cart</a></li>
+                <li><a href="/cart.html">Cart <span id="cartItemCount"></span></a></li>
             </ul>
         </nav>
     </header>
 
     <section class="productpagewrapper">
+        <div id="products">
+            <div id="product">
+                <img src="/images/Products/JP_legojeep.png" class="prodImage">
 
-        <img src="/images/Products/JP_legojeep.png" width="500">
+                <div class="tags">
+                    <h2 class="prodName"> Jurassic Park Lego Jeep </h2>
+                    <p class="prodDesc"> Explore the dense jungles and forests in your Lego Jurassic Park brand Jeep!
+                        Spot and hunt dinosaurs,
+                        research prehistoric vegetation, and much more!
+                        <span class="prodPrice">20</span><a href="#" class="addToCart prodBtn abutton">Add to Cart</a>
+                </div>
 
-        <section class="productdescription">
-            <h2> Jurassic Park Lego Jeep</h2>
-            <h3><img src="/images/WebImages/jpay.png" width="50"><strong>20</strong> </h3>
-            <p> Explore the dense jungles and forests in your Lego Jurassic Park brand Jeep! Spot and hunt dinosaurs,
-                research prehistoric vegetation, and much more!</p>
-        </section>
-        <section class="productbuttons">
-            <button> Add To Cart </button>
-            <a href="/cart.html"><button> Checkout </button></a>
-        </section>
-
+            </div>
+        </div>
 
     </section>
 </body>
