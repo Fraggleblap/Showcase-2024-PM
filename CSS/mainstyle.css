@@ -250,7 +250,9 @@ button:hover {
     position: absolute;
     display: flex;
     justify-content: center;
+    align-self: center;
     top: 25%;
+    z-index: 0;
 }
 
 .pagewrapper {
@@ -301,5 +303,19 @@ h3 {
         height: 300px;
         width: 1000px;
         align-content: center;
+    }
+
+    .logo>img {
+        width: 35%;
+        height: 35%;
+    }
+
+    .logo {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        top: 20%;
+        z-index: 0;
     }
 }
