@@ -1,6 +1,6 @@
 const
     // set the name of your shop here
-    shopID = 'JPMerch4',
+    shopID = 'JPMerch5',
     // match the following attributes to the classes on your products
     productClass = 'product',
     imageClass = 'prodImage',
