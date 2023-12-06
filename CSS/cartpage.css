@@ -28,7 +28,18 @@
 .prodPrice {
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
+    margin-top: 1em;
+    font-size: 36px;
+    margin-left: 10%;
+    margin-right: -3.9%;
+}
+
+.prodPrice::before {
+    height: 1em;
+    width: 1em;
+    background-image: url(/images/WebImages/jpay.png);
+    background-size: cover;
+    content: "";
 }
 
 .prodBtn,
@@ -110,4 +121,8 @@ h1 {
     padding-left: 10%;
     padding-top: 5%;
     font-size: 36px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
 }
