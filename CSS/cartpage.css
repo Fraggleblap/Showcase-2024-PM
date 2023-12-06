@@ -30,8 +30,7 @@
     flex-direction: row;
     margin-top: 1em;
     font-size: 36px;
-    margin-left: 10%;
-    margin-right: -3.9%;
+    margin-bottom: 1%;
 }
 
 .prodPrice::before {
@@ -59,7 +58,10 @@
     background-color: black;
     color: yellow;
 }
-
+.prodBtn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 .removeBtn,
 #emptyCart {
     background-color: black;

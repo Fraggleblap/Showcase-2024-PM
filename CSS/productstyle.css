@@ -26,9 +26,6 @@ padding-right: 7.5%;
 flex-flow: column;
 align-items: center;
 }
-.productdescription {
-padding-left: 1%;
-}
 button,
 .abutton {
     background-color: #A01C24; 
@@ -52,10 +49,11 @@ button:hover,
     cursor:pointer;
 }
 p {
-    margin-top: 5%;
+    flex-direction: row;
+    padding-top: 5%;
     font-size: 2.5vh;
     text-wrap: wrap;
-    margin-left: -5.5%;
+    padding-left: 0%;
 }
 h2,
 h3>strong {
@@ -96,8 +94,8 @@ img {
 }
 .abutton {
     height: 1%;
-    margin-top: 5%;
-    margin-right: 2.5%;
+    margin-right: 75%;
+    padding: 50px 115px;
 }
 @media only screen and (max-width:640px) {
     #product {

@@ -1,6 +1,6 @@
 const
     // set the name of your shop here
-    shopID = 'JPMerch6',
+    shopID = 'JPMerch7',
     // match the following attributes to the classes on your products
     productClass = 'product',
     imageClass = 'prodImage',
@@ -36,6 +36,7 @@ function addToCart(e) {
     e.preventDefault();
     // get the product attributes from DOM
     let product = e.target.parentElement.children;
+    let image = e.target.parentElement.parentElement.children[0];
     // create an array to hold product attributes
     let attributes = ['name', 'desc', 'price', 'imgSrc'];
     // loop through the product attributes and assign them to the array
@@ -43,8 +44,9 @@ function addToCart(e) {
         if (node.className === nameClass) attributes[0] = node.innerText;
         if (node.className === descClass) attributes[1] = node.innerText;
         if (node.className === priceClass) attributes[2] = parseFloat(node.innerText);
-        if (node.className === imageClass) attributes[3] = node.currentSrc;
     }
+   attributes[3] = image.currentSrc;
+   console.log(image);
     // check if any attributes are undefined
     if (attributes.includes(undefined)) {
         console.log("Error: One or more attributes are undefined, check your class names");
@@ -114,9 +116,9 @@ function updateCart() {
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <div class="cartItemPricing">
-                    <p>Price: <img src="images/WebImages/jpay.png" width="35">${item.price.toFixed(2)}</p>
+                    <p>Price: <img src="images/WebImages/jpay.png" width="25">${item.price.toFixed(2)}</p>
                     <p>Quantity: ${item.qty}</p>
-                    <p>Subtotal: <img src="images/WebImages/jpay.png" width="35">${(item.price * item.qty).toFixed(2)}</p>
+                    <p>Subtotal: <img src="images/WebImages/jpay.png" width="25">${(item.price * item.qty).toFixed(2)}</p>
                     <a id="${index}" href="#" class="removeBtn">Remove</a>
                 </div>
             </div>
@@ -127,7 +129,7 @@ function updateCart() {
     // add total to cart element
     cart.innerHTML += `
     <div class="cartTotal">
-        <h2>Total: <img src="images/WebImages/jpay.png" width="35">${total.toFixed(2)}</h2>
+        <h2>Total: <img src="images/WebImages/jpay.png" width="25">${total.toFixed(2)}</h2>
         <a href="#" id="emptyCart">Empty Cart</a>
     </div>
     `;
