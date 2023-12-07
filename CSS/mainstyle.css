@@ -23,8 +23,8 @@ img {
 
 header nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
     list-style: none;
     margin: 0;
     background: #286454;
@@ -301,13 +301,14 @@ h3 {
 
     .banner>img {
         height: 300px;
-        width: 1000px;
+        width: 640px;
         max-width: 640px;
         align-content: center;
     }
 
     .logo>img {
         width: 35%;
+        max-width: 640px;
         height: 35%;
     }
 
@@ -318,5 +319,6 @@ h3 {
         align-self: center;
         top: 20%;
         z-index: 0;
+        max-width: 640px;
     }
 }

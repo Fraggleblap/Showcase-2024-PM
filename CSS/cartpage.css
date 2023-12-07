@@ -41,7 +41,6 @@
     content: "";
 }
 
-.prodBtn,
 .removeBtn,
 #emptyCart {
     display: block;
@@ -127,4 +126,10 @@ h1 {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width:640px) {
+    .cartItemInfo>p {
+       font-size: 0;
+    }
 }

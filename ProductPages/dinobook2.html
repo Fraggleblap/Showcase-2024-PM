@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/CSS/cartpage.css">
     <link rel="stylesheet" href="/CSS/mainstyle.css">
     <link rel="stylesheet" href="/CSS/productstyle.css">
-    <script src="js/cart.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
@@ -21,25 +21,28 @@
             </ul>
         </nav>
     </header>
-
     <section class="productpagewrapper">
+        <!--Unless you know what you'er doin, don't tuch this coed pls-->
+        <div id="products">
+            <div id="product">
+                <img src="../images/Products/generic_book2.jpg" class="prodImage">
+                <section class="column">
 
-        <img src="/images/products/generic_book2.jpg" width="500">
-
-        <section class="productdescription">
-            <h2> Dino Discoveries Volume 2 </h2>
-            <h3><img src="/images/WebImages/jpay.png" width="50"><strong>15</strong> </h3>
-            <p>
-                "Dino Discoveries Volume 2" takes readers on a thrilling sci-fi adventure where cutting-edge technology
-                reveals the realistic behaviors of dinosaurs. Join Dr. Alexandra Hartley as she uncovers the secrets of
-                these ancient creatures, blending captivating storytelling with educational insights into the world of
-                dinosaurs.</p>
-        </section>
-        <section class="productbuttons">
-            <button> Add To Cart </button>
-            <a href="/cart.html"><button> Checkout </button></a>
-        </section>
-
+                    <h2 class="prodName">Dino Discoveries Volume 2 </h2>
+                    <p class="prodDesc">
+                        Dino Discoveries Volume 2" takes readers on a thrilling sci-fi adventure where cutting-edge
+                        technology
+                        reveals the realistic behaviors of dinosaurs. Join Dr. Alexandra Hartley as she uncovers the
+                        secrets of
+                        these ancient creatures, blending captivating storytelling with educational insights into the
+                        world of
+                        dinosaurs.
+                    </p>
+                    <!--  don't change the cart line 😊🤞-->
+                    <span class="prodPrice">15</span><a href="#" class="addToCart prodBtn abutton">Add to Cart</a>
+                </section>
+            </div>
+        </div>
     </section>
 </body>
 

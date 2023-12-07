@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/CSS/cartpage.css">
     <link rel="stylesheet" href="/CSS/mainstyle.css">
     <link rel="stylesheet" href="/CSS/productstyle.css">
-    <script src="js/cart.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
@@ -23,21 +23,25 @@
     </header>
 
     <section class="productpagewrapper">
+        <!--Unless you know what you'er doin, don't tuch this coed pls-->
+        <div id="products">
+            <div id="product">
+                <img src="../images/Products/jp_mug.png" class="prodImage">
+                <section class="column">
 
-        <img src="/images/Products/jp_mug.png" width="500">
-
-        <section class="productdescription">
-            <h2> Jurassic Park Mug</h2>
-            <h3><img src="/images/WebImages/jpay.png" width="50"><strong>7</strong> </h3>
-            <p>Experience the thrill with every sip! Unleash the adrenaline with our amazing Jurassic Park-themed coffee mug. Feel the excitement in just one cup. Order yours now!</p>
-        </section>
-        <section class="productbuttons">
-            <button> Add To Cart </button>
-            <a href="/cart.html"><button> Checkout </button></a>
-        </section>
-
+                    <h2 class="prodName"> Jurassic Park Mug </h2>
+                    <p class="prodDesc">
+                        Experience the thrill with every sip! Unleash the adrenaline with our amazing Jurassic
+                        Park-themed coffee mug. Feel the excitement in just one cup. Order yours now!
+                    </p>
+                    <!--  don't change the cart line 😊🤞-->
+                    <span class="prodPrice">7</span><a href="#" class="addToCart prodBtn abutton">Add to Cart</a>
+                </section>
+            </div>
+        </div>
 
     </section>
+
 </body>
 
 </html>

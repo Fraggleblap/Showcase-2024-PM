@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/CSS/cartpage.css">
     <link rel="stylesheet" href="/CSS/mainstyle.css">
     <link rel="stylesheet" href="/CSS/productstyle.css">
-    <script src="js/cart.js"></script>
+    <script src="../js/cart.js"></script>
 </head>
 
 <body>
@@ -22,24 +22,31 @@
         </nav>
     </header>
 
+    
     <section class="productpagewrapper">
+        <!--Unless you know what you'er doin, don't tuch this coed pls-->
+        <div id="products">
+            <div id="product">
+                <img src="../images/Products/dinobook1.png" class="prodImage">
+                <section class="column">
 
-        <img src="/images/products/dinobook1.png" width="500">
-
-        <section class="productdescription">
-            <h2> Dinosaur Kids book</h2>
-            <h3><img src="/images/WebImages/jpay.png" width="50"><strong>10</strong> </h3>
-            <p>Embark on a thrilling prehistoric adventure with "Dino Discovery: Jurassic Journey!" This captivating
-                kids' book, inspired by the great Jurassic Park, brings young readers into the amazing world of
-                dinosaurs. Filled with illustrations and fascinating fun facts, this book takes children on a journey
-                through the Jurassic era, where they'll encounter many extinct perhistoric beasts!</p>
-        </section>
-        <section class="productbuttons">
-            <button> Add To Cart </button>
-            <a href="/cart.html"><button> Checkout </button></a>
-        </section>
+                    <h2 class="prodName"> Dinosaur Kids Book </h2>
+                    <p class="prodDesc">
+                        Embark on a thrilling prehistoric adventure with "Dino Discovery: Jurassic Journey!" This
+                        captivating
+                        kids' book, inspired by the great Jurassic Park, brings young readers into the amazing world of
+                        dinosaurs. Filled with illustrations and fascinating fun facts, this book takes children on a
+                        journey
+                        through the Jurassic era, where they'll encounter many extinct perhistoric beasts!
+                    </p>
+                    <!--  don't change the cart line 😊🤞-->
+                    <span class="prodPrice">10</span><a href="#" class="addToCart prodBtn abutton">Add to Cart</a>
+                </section>
+            </div>
+        </div>
 
     </section>
+
 </body>
 
 </html>

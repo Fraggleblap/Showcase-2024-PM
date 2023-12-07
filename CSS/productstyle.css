@@ -30,15 +30,24 @@ button,
 .abutton {
     background-color: #A01C24; 
     color: white;
-    padding: 35px 115px;
-    text-align: center;
-    display: inline-block;
+    display: flex;
+    align-self: flex-start;
     font-size: 28px;
     margin-bottom: 5%;
     border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  height: 35%;
+  margin-right: 75%;
+  padding: 50px 80px;
 }
+
+button,
+.abutton>a {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 button:active
 .abutton:active {
     box-shadow: 0 5px #666;
@@ -54,6 +63,9 @@ p {
     font-size: 2.5vh;
     text-wrap: wrap;
     padding-left: 0%;
+}
+.prodDesc {
+    padding-right: 15%;
 }
 h2,
 h3>strong {
@@ -77,6 +89,7 @@ h1 {
       border-radius: 15px;
 }
 #product {
+    padding-left: 10%;
     display: flex;
     flex-direction: row;
 }
@@ -88,14 +101,9 @@ h1 {
     width: 30%;
     height: 30%;
 }
-img {
-    max-width: 500px;
-    max-height: 500px;
-}
-.abutton {
-    height: 1%;
-    margin-right: 75%;
-    padding: 70px 115px;
+.prodImage {
+    max-width: 365px;
+    max-height: 365px;
 }
 @media only screen and (max-width:640px) {
     #product {
