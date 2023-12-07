@@ -302,6 +302,7 @@ h3 {
     .banner>img {
         height: 300px;
         width: 1000px;
+        max-width: 640px;
         align-content: center;
     }
 
