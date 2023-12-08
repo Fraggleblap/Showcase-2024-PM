@@ -20,11 +20,10 @@ img {
     color: wheat;
     text-wrap: wrap;
 }
-
 header nav ul {
     display: flex;
     flex-direction: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     background: #286454;
@@ -35,8 +34,8 @@ header nav ul {
 
 }
 li {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 li>a {
@@ -48,7 +47,6 @@ li>a {
     padding-bottom: 2%;
     width: 100%;
     white-space: nowrap;
-    overflow: auto;
 }
 
 .slides::-webkit-scrollbar {
@@ -68,7 +66,6 @@ li>a {
 }
 
 
-
 #InStore {
     background-image: url(/images/WebImages/giftshop1.jpg);
     background-blend-mode: lighten;
@@ -81,9 +78,9 @@ li>a {
 }
 
 #For_Kids {
-    background-image: url(/images/WebImages/kidspattern_bg.jpg);
+    background-image: url(/images/WebImages/kidsbg1.jpg);
     background-blend-mode: lighten;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     border-color: #fcba03;
@@ -291,6 +288,40 @@ h3 {
     font-size: xx-large;
     padding-top: 1%;
 }
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0rem;
+    padding: 1%;
+    /* padding-left:1em; */
+    /* padding-top: 2em;*/
+}
+.headerItem {
+    display: inline-block;
+    position: relative;
+    /* color: #0087ca; */
+}
+
+.headerItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+
+.headerItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
 @media only screen and (max-width:640px) {
     header nav ul{
         flex-wrap: wrap;
@@ -301,8 +332,8 @@ h3 {
 
     .banner>img {
         height: 300px;
-        width: 640px;
-        max-width: 640px;
+        width: 98.8%;
+        max-width: 98.8%;
         align-content: center;
     }
 
@@ -317,8 +348,45 @@ h3 {
         display: flex;
         justify-content: center;
         align-self: center;
-        top: 20%;
+        top: 38%;
         z-index: 0;
         max-width: 640px;
     }
+
+    h3>img {
+        height: 1em;
+        width: 1em;
+    }
+
+    .slides::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .product>a>h2, .product>a>h3 {
+        display: flex;
+        align-self: flex-start;
+        margin-left: 1%;
+        font-size: 3vw;
+        color: #fffef8;
+    }
+
+    .product {
+        padding-right: 10%;
+        padding-left: 10%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0rem;
+        padding: 1%;
+        /* padding-left:1em; */
+        /* padding-top: 2em;*/
+        font-size: 9px;
+    }
+
 }
