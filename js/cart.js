@@ -116,9 +116,9 @@ function updateCart() {
                 <h2>${item.name}</h2>
                 <p>${item.desc}</p>
                 <div class="cartItemPricing">
-                    <p>Price: <img src="images/WebImages/jpay.png" width="25">${item.price.toFixed(2)}</p>
+                    <p>Price: <img src="images/WebImages/jpay.png" width="25" id="coin">${item.price.toFixed(2)}</p>
                     <p>Quantity: ${item.qty}</p>
-                    <p>Subtotal: <img src="images/WebImages/jpay.png" width="25">${(item.price * item.qty).toFixed(2)}</p>
+                    <p>Subtotal: <img src="images/WebImages/jpay.png" width="25" id="coin">${(item.price * item.qty).toFixed(2)}</p>
                     <a id="${index}" href="#" class="removeBtn">Remove</a>
                 </div>
             </div>

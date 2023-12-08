@@ -92,6 +92,8 @@
     display: flex;
     gap: 1em;
     position: relative;
+    max-width: 100vw;
+    max-height: 20vh;
 }
 
 .cartItem img {
@@ -131,5 +133,15 @@ h1 {
 @media only screen and (max-width:640px) {
     .cartItemInfo>p {
        font-size: 0;
+    }
+
+    .cartItem .cartItemPricing {
+        font-size: 10px;
+    
+    }
+
+    #coin {
+        width: 1.4em;
+        height: 1.4em;
     }
 }
