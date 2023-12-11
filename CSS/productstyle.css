@@ -115,4 +115,22 @@ h1 {
     .prodImage {
         width: 400px;
     }
+
+    .productpagewrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        min-width: 2.5em;
+        min-height: 2.5em;
+    }
+    .image {
+        min-width: 400px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .instore {
+        margin-top: 10%;
+    }
 }
