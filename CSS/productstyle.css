@@ -41,7 +41,9 @@ button,
   height: 35%;
   padding: 8% 12%;
 }
-
+button {
+    padding: 15% 37%;
+}
 button,
 .abutton>a {
     display: flex;
