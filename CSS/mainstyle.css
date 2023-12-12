@@ -348,7 +348,7 @@ h3 {
         display: flex;
         justify-content: center;
         align-self: center;
-        top: 38%;
+        top: 28%;
         z-index: 0;
         max-width: 640px;
     }
@@ -389,4 +389,7 @@ h3 {
         font-size: 9px;
     }
 
+    #NFTs .images img {
+        max-width: 65px;
+    }
 }
